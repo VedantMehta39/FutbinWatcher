@@ -5,7 +5,8 @@ A Command Line Application to manage investments and create price alerts for par
 
 ## Investment Management
 1)  I have provided the InvestmentManagement.txt file, keep it in the same directory as the .exe file, just edit it according to the format
-2)  The file needs to be formatted in the following way: <playerurl> <costPrice> <playerQuantity> <console(ps,xbox,pc)> 
+2)  The file needs to be formatted in the following way: <(playerurl)> <(costPrice)> <(playerQuantity)> <(console)> 
+3)  <(console)> can be one of the following three options: ps, xbox, pc
 
 ## Price Alerts
 1)  To get the alert notifications, you need to download the IFTTT(IF This Then That) app on your device.
@@ -18,4 +19,5 @@ A Command Line Application to manage investments and create price alerts for par
 8)  To retrieve it, go to "My Applets" --> "Services" --> "Webhooks" --> "Settings"(Gear Icon) --> the key is the part after "/use/" in the     url
 9)  When asked enter the name and the key into the FutbinWatcher application.
 10) I have provided the PriceAlert.txt file, keep it in the same directory as the .exe file, just edit it according to the format
-11) The file needs to be formatted in the following way: <playerurl> <console(ps,xbox,pc)> <targetPrice>
+11) The file needs to be formatted in the following way: <(playerurl)> <(console)> <(targetPrice)>
+12) <(console)> can be one of the following three options: ps, xbox, pc
