@@ -20,7 +20,7 @@ def main():
 
 
     elif option.upper()=='B':
-        playersFile = "/PriceAlert.txt"
+        playersFile = os.path.dirname(sys.argv[0])+"/PriceAlert.txt"
         runtime=float(input("\nHow long do you want the app to keep running?(in minutes)\n"))
         eventName=input("\nPlease enter your ifttt event name\n")
         eventKey=input("\nPlease enter your ifttt event key\n")
