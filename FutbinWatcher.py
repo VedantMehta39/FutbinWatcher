@@ -51,6 +51,7 @@ def parseFile(playersFile,session,**kwargs):
             except :
                 print("File Not Formatted Properly")
                 sys.exit()
+            time.sleep(random.randint(2,4))
             player = players.readline()
         players.close()
         return playersAtTargetPrice
@@ -74,6 +75,7 @@ def parseFile(playersFile,session,**kwargs):
             except IndexError:
                 print("File Not Formatted Properly")
                 sys.exit()
+            time.sleep(random.randint(2,4))    
             player = players.readline()
         players.close()
         return dict_table
