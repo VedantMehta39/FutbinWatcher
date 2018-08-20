@@ -6,6 +6,7 @@ import pandas as pd
 from collections import defaultdict
 import sys
 import os
+import random
 
 def main():
     option=input("What do you want to do?\nA Track Investments \nB Receive Price Alerts \n\n")
