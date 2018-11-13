@@ -21,3 +21,6 @@ A Command Line Application to manage investments and create price alerts for par
 10) I have provided the PriceAlert.txt file, keep it in the same directory as the .exe file, just edit it according to the format
 11) The file needs to be formatted in the following way: <(playerurl)> <(console)> <(targetPrice)>
 12) <(console)> can be one of the following three options: ps, xbox, pc
+
+## Downloads:
+1) To Download the .exe file go to the following link : https://drive.google.com/open?id=1bK3YELiCbsi10gLbgfbnvVft3tIwn4pv
