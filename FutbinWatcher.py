@@ -9,7 +9,7 @@ import os
 import random
 
 def main():
-    option=input("What do you want to do?\nA Track Investments \nB Receive Price Alerts \n\n")
+    option = input("What do you want to do?\nA Track Investments \nB Receive Price Alerts \n\n")
     session = HTMLSession()
     if option.upper() == 'A':
         playersFile=os.path.dirname(sys.argv[0])+"/InvestmentManagement.txt"
@@ -76,7 +76,7 @@ def parseFile(playersFile,session,**kwargs):
             except IndexError:
                 print("File Not Formatted Properly")
                 sys.exit()
-            time.sleep(random.randint(2,4))    
+            time.sleep(random.randint(2,4))
             player = players.readline()
         players.close()
         return dict_table
@@ -88,10 +88,10 @@ def price_scrape(url,console,session):
     tagName = soup.find("span", {"class": "header_name"})
     player_name = tagName.text
     player_id = tagPrice["data-player-resource"]
-    prices = json.loads(session.get("https://www.futbin.com/18/playerPrices?player=" + player_id).text)
+    prices = json.loads(session.get(url[:26]+"playerPrices?player=" + player_id).text)
     livePrice = float(prices[player_id]["prices"][console]["LCPrice"].replace(",", ""))
     r.close()
-    return player_name,livePrice
+    return player_name, livePrice
 
 def alert(eventName,eventKey,playersAtTargetPrice,session):
     session.post(f"https://maker.ifttt.com/trigger/{eventName}/with/key/{eventKey}",data=playersAtTargetPrice)
