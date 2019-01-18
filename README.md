@@ -23,4 +23,4 @@ A Command Line Application to manage investments and create price alerts for par
 12) <(console)> can be one of the following three options: ps, xbox, pc
 
 ## Downloads:
-1) To Download the .exe file go to the following link : https://drive.google.com/open?id=1bK3YELiCbsi10gLbgfbnvVft3tIwn4pv
+1) To Download the .exe file go to the following link : https://drive.google.com/drive/folders/1bK3YELiCbsi10gLbgfbnvVft3tIwn4pv?usp=sharing
