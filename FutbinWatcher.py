@@ -17,6 +17,7 @@ def main():
         pandasPlayerTable=pd.DataFrame(dict_table)
         pd.set_option('display.expand_frame_repr', False)
         print(pandasPlayerTable)
+        input("Press any key to exit")
 
 
     elif option.upper()=='B':
@@ -48,7 +49,8 @@ def parseFile(playersFile,session,**kwargs):
                 if livePrice<=targetAlertPrice:
                     playersAtTargetPrice["value1"] = player_name
                     playersAtTargetPrice["value2"]=livePrice
-                alert(kwargs["eventName"], kwargs["eventKey"], playersAtTargetPrice, session)
+                if len(playersAtTargetPrice)>0:
+                    alert(kwargs["eventName"], kwargs["eventKey"], playersAtTargetPrice, session)
             except :
                 print("File Not Formatted Properly")
                 sys.exit()
